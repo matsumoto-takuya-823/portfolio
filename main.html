@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Matsumoto Takuya</h1>
+        <nav>
+            <ul>
+                <a href="#about">
+                    <li>Profile</li>
+                </a>
+                <a href="#skills">
+                    <li>Skills</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--　スライドショー -->
+        <section id="home">
+            <div class="slideshow">
+                <div class="slide1 slide"></div>
+                <div class="slide2 slide"></div>
+                <div class="slide3 slide"></div>
+            </div>
+            <div class="slide-in">
+                <p>Matsumoto's Portfolio</p>
+            </div>
+        </section>
+        <!-- 自己紹介 -->
+        <section id=about>
+            <div class="wrap">
+                <h2>Profile</h2>
+                <div class="profile-info">
+                    <section class="profile">
+                        <h3>Introduce</h3>
+                        <div class="my-picture">
+                            <img src="image/people.jpeg" alt="自分の写真">
+                            <h4>松本拓也</h4>
+                        </div>
+                        <p>初めまして、キャンプやスキーが趣味な21歳です。 20歳まで板前として働いていましたが、今後はどの業界でもIT知識が必要になると思いプログラミング学習をはじめたところ、どんどんその面白さにのめりこんでしまい思い切ってエンジニアの道を目指し始めました。 経験としては、まだまだまだ未熟ではありますが、よろしくお願い致します。</p>
+                    </section>
+                    <section class="history">
+                        <h3>History</h3>
+                        <table>
+                            <tr>
+                                <td class="years">H29年3月</td>
+                                <td>高校卒業</td>
+                            </tr>
+                            <tr>
+                                <td class="years">H29年4月</td>
+                                <td>専門学校入学</td>
+                            </tr>
+                            <tr>
+                                <td class="years">H30年3月</td>
+                                <td>専門学校卒業</td>
+                            </tr>
+                            <tr>
+                                <td class="years">H30年4月</td>
+                                <td>飲食店に就職</td>
+                            </tr>
+                            <tr>
+                                <td class="years">R1年6月</td>
+                                <td>退職</td>
+                            </tr>
+                            <tr>
+                                <td class="years">R1年7月〜</td>
+                                <td>プログラミング学習に専念</td>
+                            </tr>
+                        </table>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- HTML.CSS.JavaScriptのスキル紹介 -->
+        <section id=skills>
+            <div class="wrap">
+                <h2>Skills</h2>
+                <div class="html">
+                    <article class="markup-skill">
+                        <h3>HTML5&CSS3</h3>
+                        <p>こちら架空のページの表面部分を作成しました。</p>
+                        <p>メディアクエリを使い、レスポンシブデザインにも対応しました</p>
+                        <p>左からPC、iPad、スマートフォンに対応しました。</p>
+                        <a class="btn" href="./moc_hw_matsumoto_/index.html">詳しく見る</a>
+                    </article>
+                    <img src="./image/mock.jpg" alt="moc">
+                    <img src="./image/iPad_mock.jpg" alt="moc">
+                    <img src="./image/sp_mock.jpg" alt="moc">
+                </div>
+                <div class="js">
+                    <img src="./image/countdown-olynpic.png" alt="カウントダウンタイマー">
+                    <article class="js-skill">
+                        <h3>JavaScript</h3>
+                        <p>東京2020オリンピックまでのカウントダウンタイマー</p>
+                        <p>setTimeoutを使って作成したカウントダウンタイマーです。</p>
+                        <p>現在時刻から開会式の日までのカウントダウンになっています</p>
+                        <a class="btn" href="countdown/index.html">詳しく見る</a>
+
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- メール -->
+        <section id="contact">
+            <div class="wrap">
+                <h2>Contact <i class="far fa-envelope"></i></h2>
+                <p>何かござましたら、ご連絡お願いします。</p>
+                <p>ご連絡は<a href="mailto:takumatsu0823.a@gmail.com">こちら</a>までお願いします。</p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <small>© Matsumoto 2019</small>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

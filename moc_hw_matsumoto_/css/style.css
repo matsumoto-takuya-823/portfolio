@@ -1,0 +1,165 @@
+/* 全体のスタイル */
+
+.title {
+    text-align: center;
+    color: red;
+    font-size: 40px;
+    margin-top: 90px;
+}
+
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+.blue-btn {
+    width: 250px;
+    background-color: blue;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid;
+    border-color: gray;
+}
+
+
+/* 一番上の写真 */
+
+.man {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+
+/* .new-infoのスタイル */
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap .new {
+    border: 1px solid;
+    border-color: gray;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.new img {
+    height: 200px;
+    width: 300px;
+    border-bottom: 1px solid;
+    border-color: gray;
+}
+
+.new p {
+    padding: 0 15px;
+}
+
+.new-text {
+    font-weight: bold;
+}
+
+.food {
+    color: gray;
+}
+
+#new-info .blue-btn {
+    display: block;
+    margin: 40px auto;
+}
+
+
+/* .categoryのスタイル */
+
+.category-item {
+    width: 45%;
+    background-color: rgb(221, 217, 217);
+    margin-top: 50px;
+    border: 1px solid;
+    border-color: gray;
+}
+
+.category-picture {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-bottom: 1px solid;
+    border-color: gray;
+}
+
+.category-item h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.category-item p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-item .blue-btn {
+    display: block;
+    margin: 0 auto 50px;
+}
+
+
+/* newsのスタイル */
+
+#news {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.news-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.page {
+    width: 30%;
+    border: 1px solid;
+    border-color: gray;
+    display: flex;
+}
+
+.page img {
+    width: 35%;
+    border-right: 1px solid;
+    border-color: gray;
+}
+
+.page p {
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+
+/* footerのスタイル */
+
+footer {
+    background-color: rgb(221, 217, 217);
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-top: 2px solid;
+    border-color: gray;
+    margin-top: 60px;
+}
