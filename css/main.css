@@ -12,10 +12,13 @@ body h2 {
 
 .wrap {
   margin: 0 10%;
-  padding: 40px 0;
+  padding: 5% 0;
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 11111;
   background-color: #757575;
   color: #f2f2f2;
   display: flex;
@@ -36,6 +39,27 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-between;
+}
+
+header nav ul li {
+  font-size: 15px;
+}
+
+header nav ul li:hover {
+  animation: color-change 1s ease 1;
+  color: rgba(253, 95, 95, 0.9);
+  font-size: 20px;
+}
+
+@keyframes color-change {
+  0% {
+    color: rgba(253, 95, 95, 0.1);
+    font-size: 15px;
+  }
+  100% {
+    color: rgba(253, 95, 95, 0.9);
+    font-size: 20px;
+  }
 }
 
 #home {
@@ -112,6 +136,19 @@ header nav ul {
   font-size: 1.5em;
   color: rgba(253, 95, 95, 0.9);
   -webkit-text-stroke: 1px #757575;
+  text-align: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 959px) {
+  .slide-in {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slide-in {
+    font-size: 0.7rem;
+  }
 }
 
 #about {
@@ -126,77 +163,114 @@ header nav ul {
   margin-bottom: 20px;
 }
 
-#about .profile-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-#about .profile-info .profile {
-  width: 45%;
+#about .profile {
   border: solid 2px rgba(20, 20, 20, 0.5);
   border-radius: 20px;
   padding: 1%;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-#about .profile-info .profile h3 {
+#about .profile h3 {
   font-size: 30px;
   margin-bottom: 10px;
   color: rgba(0, 50, 214, 0.7);
   -webkit-text-stroke: 1px rgba(20, 20, 20, 0.8);
 }
 
-#about .profile-info .profile .my-picture {
+#about .profile .my-picture {
   float: left;
 }
 
-#about .profile-info .profile .my-picture h4 {
+#about .profile .my-picture h4 {
   margin-top: 10px;
   color: rgba(0, 50, 214, 0.7);
   -webkit-text-stroke: 1px rgba(20, 20, 20, 0.8);
 }
 
-#about .profile-info .profile .my-picture img {
+#about .profile .my-picture img {
   border-radius: 50%;
   width: 100px;
 }
 
-#about .profile-info .profile p {
-  font-size: 15px;
+#about .profile p {
+  font-size: 1rem;
   line-height: 30px;
 }
 
-#about .profile-info .history {
-  width: 45%;
+#about .history {
   border: solid 2px rgba(20, 20, 20, 0.5);
   border-radius: 20px;
   padding: 1%;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-#about .profile-info .history h3 {
+#about .history h3 {
   font-size: 30px;
   margin-bottom: 10px;
   color: rgba(0, 50, 214, 0.7);
   -webkit-text-stroke: 1px rgba(20, 20, 20, 0.8);
 }
 
-#about .profile-info .history table {
-  font-size: 20px;
+#about .history table {
+  font-size: 1.3rem;
   margin: 0 auto;
 }
 
-#about .profile-info .history table .years {
+#about .history table .years {
   padding-right: 30px;
   padding-top: 10px;
 }
 
+@media screen and (min-width: 960px) {
+  .profile-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile-info .profile {
+    width: 45%;
+  }
+  .profile-info .history {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 959px) {
+  .history {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .history {
+    margin-top: 5%;
+  }
+}
+
 #skills .btn {
+  display: block;
   background-color: #6286fb;
   color: #fff;
   padding: 15px;
   border-radius: 10px;
   border: 4px solid #0032d6;
+}
+
+#skills .btn:hover {
+  animation: btn-color 1s ease 1;
+  background-color: #0032d6;
+  border: 4px solid #6286fb;
+}
+
+@keyframes btn-color {
+  0% {
+    background-color: #6286fb;
+    border: 4px solid #0032d6;
+    color: #fff;
+  }
+  100% {
+    background-color: #0032d6;
+    border: 4px solid #6286fb;
+  }
 }
 
 #skills .html {
@@ -205,11 +279,7 @@ header nav ul {
   justify-content: space-between;
 }
 
-#skills .html .markup-skill {
-  position: relative;
-}
-
-#skills .html .markup-skill h3 {
+#skills .html h3 {
   color: rgba(0, 50, 214, 0.7);
   -webkit-text-stroke: 1px rgba(20, 20, 20, 0.8);
   font-size: 30px;
@@ -217,15 +287,8 @@ header nav ul {
   margin-bottom: 20px;
 }
 
-#skills .html .markup-skill p {
-  font-size: 20px;
+#skills .html p {
   line-height: 40px;
-}
-
-#skills .html .markup-skill .btn {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
 }
 
 #skills .html img {
@@ -240,30 +303,63 @@ header nav ul {
 
 #skills .js img {
   height: 300px;
+  margin: 0 auto;
 }
 
-#skills .js .js-skill {
-  position: relative;
-  width: 50%;
-}
-
-#skills .js .js-skill h3 {
+#skills .js h3 {
   color: rgba(0, 50, 214, 0.7);
   -webkit-text-stroke: 1px rgba(20, 20, 20, 0.8);
   font-size: 30px;
   text-align: right;
 }
 
-#skills .js .js-skill p {
-  text-align: right;
-  font-size: 20px;
+#skills .js p {
   line-height: 40px;
 }
 
-#skills .js .js-skill .btn {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
+@media screen and (min-width: 960px) {
+  #skills p {
+    font-size: 1.2rem;
+  }
+  #skills .markup-skill {
+    position: relative;
+  }
+  #skills .markup-skill .btn {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
+  #skills .js-skill {
+    position: relative;
+  }
+  #skills .js-skill .btn {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 959px) {
+  #skills p {
+    font-size: 1rem;
+  }
+  #skills .btn {
+    width: 150px;
+    text-align: center;
+  }
+  #skills .html .btn {
+    margin-top: 10%;
+  }
+  #skills .js {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #skills .btn {
+    width: 120px;
+    text-align: center;
+  }
 }
 
 #contact {
